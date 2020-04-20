@@ -1,0 +1,139 @@
+
+
+body{
+  margin: 0px;
+  /* background-color:black; */
+
+  background-image: linear-gradient(to bottom right, rgb(126, 122, 122), rgb(243, 243, 239));
+}
+
+.mybox{
+    margin: auto;
+    width: 80%;
+    /* height: 600px; */
+    /* background-color: rgb(99, 92, 13); */
+
+    /* border:solid red; */
+    background-color: white;
+    border-radius: 20px 0px 20px 0px;
+   
+
+}
+.video{
+  margin: 10px;
+  
+}
+.mycard{
+  width: 250px%;
+  display: flex;
+justify-content: space-around;  
+margin-top: 10px;
+box-sizing: content-box;
+margin: 40px;
+}
+.nav{
+  margin-top: 0px;
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    justify-content: space-around;
+}
+.nav ul{
+background-color:black;
+height: 30px;
+padding: 10px;
+list-style: none;
+
+
+}
+.nav a{
+    display: inline;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: wheat;
+    text-decoration: none;
+
+    
+}
+
+.nav a:hover{
+    display: inline;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(231, 9, 27);
+    text-decoration: none;
+
+    
+}
+.log{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.log img{
+    /* width: 25%; */
+    height: 150px;
+   justify-content: end;
+   width: 150px;
+   border: solid red;
+
+}
+
+.clear{
+  clear: both;
+}
+/* .dd a{
+  display: inline-block;
+} */
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+ 
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+  border: solid;
+  border-radius: 20px;
+}
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  border: solid;
+  border-radius: 20px;
+}
+.flip-card-front img{
+  width: 100%;
+  height: 100%;
+}
+.flip-card-back img{
+  width: 100%;
+  height: 100%;
+ 
+}
